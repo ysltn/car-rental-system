@@ -1,0 +1,46 @@
+services:
+  db:
+    image: postgres:16
+    container_name: carrental-db
+    environment:
+      POSTGRES_DB: carrental
+      POSTGRES_USER: carrental
+      POSTGRES_PASSWORD: carrental
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U carrental -d carrental"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - carrental_pgdata:/var/lib/postgresql/data
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: carrental-app
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      DB_URL: jdbc:postgresql://db:5432/carrental
+      DB_USERNAME: carrental
+      DB_PASSWORD: carrental
+      JWT_SECRET: change-me-change-me-change-me-change-me-change-me-123
+      STORAGE_DIR: /storage
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - carrental_storage:/storage
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8080/actuator/health | grep -q UP"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  carrental_pgdata:
+  carrental_storage:

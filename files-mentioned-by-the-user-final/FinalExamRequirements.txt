@@ -1,0 +1,923 @@
+
+
+===== PAGE 1 / 24 =====
+
+Final Exam Requirements
+на экзамене ответы принимаю только на англ языке, и вопросы вы должны понимать
+на англ,переводить не буду никому
+На экзамен Вы должны будете подготовить проект, далее этот проект защищать , то
+есть Вы защищаете свои знания, Если Вы приносите идеальный проект , но не
+сможете ответить на вопросы , То ставится под сомнения что Вы делали проект сами !
+Каждому студенту будут задаваться на экзамене вопросы по Spring Framework(10-
+12),Java(10-12),git(2-3),docker(2-3)
+Part APPR Weight
+Questions 45%
+Live Coding 45%
+Project 10%
+Студент должен разработать бэкенд приложение , в основе которого будет мин 5-6
+сущностей ( Online Course Platform , Library Management System , Task Management
+System , E-Commerce Backend , University Management System , Booking System ,
+Hospital/Clinic System , Event Management Platform)
+Архитектура должна состоять из слоев контроллер,сервис,репозиторий. Должны
+быть реализованы RESTFUL эндпоинты(GET,POST,PUT,DELETE), юзаться должны Path и
+Query параметры, проект должен использовать PostgreSQL, должны быть
+использованы DTO классы, реализованы маппинги, валидация и обработка ошибок и
+исключений, хотя б один эндпоинт должен поддерживать
+пагинацию,сортировку,поиск и фильтрацию, проект должен включать Spring
+Security(регистрацию,аутентификацию,авторизацию, JWT токены,защищенные
+эндпоинты), возможность upload и download файлов, мин 2-3 асинхронных
+процесса(реализ @Async,CompletableFuture), API должно быть задокументировано с
+пом Swagger UI, подключите логирование для запросов,ошибок и важных действий,
+проект должен включать Dockerfile, docker-compose.yml, multistage build,health
+check,логи ,оптимизацию, также необходимо показать весь процесс выполнения
+вашего final проекта с помощью коммитов на вашем репозитории (20-25 коммитов в
+среднем, ссылку потом скинете , и также включайте ваше фам и имя в названия
+классов(пример AidarovaMadinaUserController, AidarovaMadinaJwtUtil и тд)
+Questions(примеры вопросов добавлю)
+1. 2. 3. 4. Java core обяз будут вопросы
+What is Spring Framework and what problems does it solve in Java development?
+Explain the difference between Spring Framework and Spring Boot.
+What is Dependency Injection in Spring?
+Explain the concepts of IoC (Inversion of Control) and DI (Dependency Injection).
+
+
+===== PAGE 2 / 24 =====
+
+5. What are Spring Beans?
+6. What are the different bean scopes in Spring?
+7. Explain singleton and prototype bean scopes.
+8. What is the purpose of the @Component annotation?
+9. What is the difference between @Component, @Service, @Repository, and
+@Controller?
+10. What is Spring Boot Starter and why is it useful?
+11. Explain the purpose of application.properties and application.yml.
+12. What is auto-configuration in Spring Boot?
+13. What is the purpose of the @SpringBootApplication annotation?
+14. Explain constructor injection and field injection. Which one is preferred and why?
+15. What is the difference between @Autowired and manual bean creation?
+16. What is REST API?
+17. Explain the difference between REST and SOAP.
+18. What is the purpose of @RestController?
+19. What is the difference between @Controller and @RestController?
+20. Explain the purpose of @RequestMapping.
+21. What is the difference between @GetMapping, @PostMapping, @PutMapping, and
+@DeleteMapping?
+22. What is the purpose of @PathVariable?
+23. What is the purpose of @RequestParam?
+24. Explain the purpose of @RequestBody.
+25. What HTTP methods are commonly used in REST APIs?
+26. What HTTP status codes are commonly used in Spring applications?
+27. What is DTO and why is it used?
+28. Explain the difference between Entity and DTO.
+29. What is JPA?
+30. What is Hibernate?
+31. Explain the difference between JPA and Hibernate.
+32. What is the purpose of the @Entity annotation?
+
+
+===== PAGE 3 / 24 =====
+
+33. What is the purpose of the @Id annotation?
+34. Explain the different strategies of primary key generation in JPA.
+35. What is the purpose of @GeneratedValue?
+36. Explain One-to-One relationship in JPA.
+37. Explain One-to-Many relationship in JPA.
+38. Explain Many-to-One relationship in JPA.
+39. Explain Many-to-Many relationship in JPA.
+40. What is the difference between eager and lazy loading?
+41. What is Spring Data JPA?
+42. What is JpaRepository?
+43. Explain derived query methods in Spring Data JPA.
+44. What is the purpose of @Query annotation?
+45. Explain pagination and sorting in Spring Data JPA.
+46. What is transaction management in Spring?
+47. What is the purpose of @Transactional?
+48. Explain exception handling in Spring Boot.
+49. What is the purpose of @ExceptionHandler?
+50. What is @ControllerAdvice used for?
+51. Explain validation in Spring Boot.
+52. What is the purpose of @Valid annotation?
+53. Explain common validation annotations such as @NotNull, @Size, and @Email.
+54. What is Lombok and why is it used?
+55. Explain the purpose of @Getter, @Setter, and @Builder annotations in Lombok.
+56. What is Spring Security?
+57. Explain authentication and authorization.
+58. What is JWT and how is it used in Spring Boot?
+59. Explain the purpose of password encoding in Spring Security.
+60. What is CORS and why is it important?
+61. Explain microservices architecture.
+
+
+===== PAGE 4 / 24 =====
+
+62. What are the advantages and disadvantages of microservices?
+63. What is Eureka Server in Spring Cloud?
+64. What is API Gateway?
+65. Explain the purpose of OpenFeign.
+66. What is Docker and why is it used with Spring applications?
+67. Explain the purpose of Docker Compose.
+68. What is CI/CD?
+69. Explain the purpose of logging in Spring Boot applications.
+70. What tools can be used for testing Spring Boot applications?
+71. Explain unit testing and integration testing.
+72. What is the purpose of JUnit in Spring Boot?
+73. Explain the purpose of Mockito.
+74. What is the difference between @Mock and @MockBean?
+75. Explain the purpose of @SpringBootTest.
+76. What is Maven and why is it used in Java projects?
+77. What is Gradle and how does it differ from Maven?
+78. Explain the Maven project structure.
+79. What is dependency management in Maven?
+80. Explain the purpose of the pom.xml file.
+81. What is the difference between SQL and NoSQL databases?
+82. Explain connection pooling in Spring Boot.
+83. What is HikariCP?
+84. Explain the purpose of profiles in Spring Boot.
+85. What is the purpose of @Profile annotation?
+86. Explain the difference between monolithic and microservice architecture.
+87. What is API versioning?
+88. Explain Swagger/OpenAPI documentation in Spring Boot.
+89. What is the purpose of Actuator in Spring Boot?
+90. Explain caching in Spring Boot applications.
+
+
+===== PAGE 5 / 24 =====
+
+91. What is the purpose of @Cacheable?
+92. Explain asynchronous processing in Spring Boot.
+93. What is the purpose of @Async?
+94. Explain scheduling in Spring Boot.
+95. What is the purpose of @Scheduled annotation?
+96. Explain the layered architecture in Spring Boot applications.
+97. What are the responsibilities of Controller, Service, and Repository layers?
+98. Explain the MVC pattern in Spring applications.
+99. What are the advantages of using Spring Boot in enterprise applications?
+Describe a Spring Boot project you have worked on and explain its architecture.
+1. What keyword is used to create a subclass in Java?
+2. What keyword is used to inherit a class in Java?
+3. What keyword is used to implement an interface?
+4. What keyword is used to define a constant variable?
+5. What keyword is used to prevent inheritance?
+6. What keyword is used to create an object?
+7. What keyword refers to the current object?
+8. What keyword refers to the parent class object?
+9. What keyword is used for exception handling blocks?
+10. What keyword is used to throw an exception manually?
+11. What keyword is used to catch exceptions?
+12. What keyword is used to execute code regardless of exceptions?
+13. What keyword is used to define an abstract class?
+14. What keyword is used to define an interface?
+15. What keyword is used to stop a loop?
+16. What keyword is used to skip an iteration in a loop?
+17. What keyword is used to return a value from a method?
+18. What keyword is used to create multiple methods with the same name?
+19. What keyword is used to synchronize threads?
+
+
+===== PAGE 6 / 24 =====
+
+20. What keyword is used to create a package in Java?
+21. What keyword is used to import a package?
+22. What keyword is used to define a method that belongs to the class?
+23. What keyword is used to define a variable shared by all objects?
+24. What keyword is used to create immutable classes?
+25. What keyword is used to define generic types?
+26. What keyword is used to inherit behavior from interfaces by default?
+27. What keyword is used to create lambda expressions?
+28. What keyword is used in switch expressions in modern Java?
+29. Which collection stores unique elements only?
+30. Which collection allows key-value pairs?
+31. Which collection maintains insertion order?
+32. Which collection is synchronized by default?
+33. Which class is used for dynamic arrays?
+34. Which class is used for linked list implementation?
+35. Which interface represents a collection of unique elements?
+36. Which interface represents key-value collections?
+37. Which interface is implemented by ArrayList?
+38. Which method adds elements into a list?
+39. Which method removes elements from a list?
+40. Which method checks collection size?
+41. Which method sorts collections?
+42. Which method checks whether a list is empty?
+43. Which class is used for stream operations?
+44. Which method is used to print output in Java?
+45. Which class is the parent of all exceptions?
+46. Which exception occurs when dividing by zero?
+47. Which exception occurs when accessing invalid array index?
+48. Which exception occurs when using a null object?
+
+
+===== PAGE 7 / 24 =====
+
+49. Which package contains collection classes?
+50. Which package contains scanner class?
+51. Which class is used for user input from console?
+52. Which method starts a thread?
+53. Which interface is commonly used to create threads?
+54. Which class is commonly extended to create threads?
+55. Which annotation marks a Spring Boot application?
+56. Which annotation creates a REST controller?
+57. Which annotation maps GET requests?
+58. Which annotation maps POST requests?
+59. Which annotation maps PUT requests?
+60. Which annotation maps DELETE requests?
+61. Which annotation injects dependencies automatically?
+62. Which annotation marks a service class?
+63. Which annotation marks a repository class?
+64. Which annotation marks a component class?
+65. Which annotation maps request bodies to objects?
+66. Which annotation extracts path variables?
+67. Which annotation extracts query parameters?
+68. Which annotation validates request data?
+69. Which annotation handles transactions?
+70. Which annotation handles exceptions globally?
+71. Which annotation marks entity classes?
+72. Which annotation marks primary keys?
+73. Which annotation generates ID values automatically?
+74. Which annotation defines One-to-Many relationship?
+75. Which annotation defines Many-to-One relationship?
+76. Which annotation defines Many-to-Many relationship?
+77. Which annotation defines One-to-One relationship?
+
+
+===== PAGE 8 / 24 =====
+
+78. Which annotation enables asynchronous methods?
+79. Which annotation schedules tasks?
+80. Which annotation caches method results?
+81. Which annotation reads values from properties?
+82. Which annotation specifies active profiles?
+83. Which annotation creates custom queries?
+84. Which annotation enables Swagger documentation?
+85. Which annotation secures methods by roles?
+86. Which annotation enables configuration properties binding?
+87. Which annotation ignores JSON fields?
+88. Which annotation formats JSON dates?
+89. Which annotation creates constructors automatically in Lombok?
+90. Which annotation creates getters in Lombok?
+91. Which annotation creates setters in Lombok?
+92. Which annotation creates builders in Lombok?
+93. Which annotation creates loggers in Lombok?
+94. Which annotation creates data methods automatically in Lombok?
+95. Which annotation is used for unit testing in JUnit 5?
+96. Which annotation mocks objects in Mockito?
+97. Which annotation loads full Spring context in tests?
+98. Which annotation tests JPA repositories?
+99. Which annotation tests MVC controllers?
+100. Which annotation defines test methods in JUnit?
+101. Which keyword creates inheritance between classes?
+102. Which keyword hides implementation details?
+103. Which OOP principle allows multiple forms?
+104. Which OOP principle binds data and methods together?
+105. Which OOP principle allows method overriding?
+106. Which OOP principle hides internal complexity?
+
+
+===== PAGE 9 / 24 =====
+
+107. Which loop executes at least once?
+108. Which loop is best for known iterations?
+109. Which operator compares values?
+110. Which operator compares references?
+111. Which operator creates objects dynamically?
+112. Which operator is used for logical AND?
+113. Which operator is used for logical OR?
+114. Which operator is used for negation?
+115. Which access modifier allows access everywhere?
+116. Which access modifier allows access only inside class?
+117. Which access modifier allows package access?
+118. Which access modifier allows subclass access?
+119. Which class is immutable in Java?
+120. Which class is used for mutable strings?
+121. Which method converts string to integer?
+122. Which method converts integer to string?
+123. Which method checks string equality?
+124. Which method finds string length?
+125. Which method converts string to uppercase?
+126. Which method removes spaces at string ends?
+127. Which method replaces text inside strings?
+128. Which method splits strings into arrays?
+129. Which method checks substring existence?
+130. Which method extracts substring?
+131. Which keyword creates exception classes?
+132. Which interface supports functional programming?
+133. Which API introduced streams in Java?
+134. Which version introduced lambda expressions?
+135. Which version introduced records?
+
+
+===== PAGE 10 / 24 =====
+
+136. 137. 138. 139. 140. 141. 142. 143. 144. 145. 146. 147. 148. 149. 150. 151. 152. 153. 154. 155. 156. 157. 158. 159. 160. 161. 162. 163. 164. Which class handles optional values?
+Which method is used in streams for filtering?
+Which method is used in streams for mapping?
+Which method collects stream results?
+Which method iterates stream elements?
+Which method reduces stream values?
+Which class manages database connections in JDBC?
+Which interface executes SQL queries in JDBC?
+Which method executes SELECT queries?
+Which method executes INSERT queries?
+Which database is commonly used with Spring Boot?
+Which dependency manager uses pom.xml?
+Which dependency manager uses build.gradle?
+Which server is embedded by default in Spring Boot?
+Which format is commonly used in REST APIs?
+Which protocol is used by REST APIs?
+Which status code means success?
+Which status code means resource not found?
+Which status code means internal server error?
+Which HTTP method creates resources?
+Which HTTP method updates resources?
+Which HTTP method deletes resources?
+Which HTTP method retrieves resources?
+Which architecture pattern separates concerns in Spring?
+Which layer contains business logic?
+Which layer communicates with database?
+Which layer handles HTTP requests?
+Which Spring module simplifies database access?
+Which Spring module provides security?
+
+
+===== PAGE 11 / 24 =====
+
+165. Which Spring module supports microservices?
+166. Which tool manages containers?
+167. Which file defines Docker services?
+168. Which tool is used for CI/CD pipelines?
+169. Which tool is commonly used for version control?
+170. Which branch is usually the main Git branch?
+171. Which command uploads commits to GitHub?
+172. Which command downloads repository changes?
+173. Which command creates a new Git branch?
+174. Which command merges branches?
+175. Which tool documents REST APIs visually?
+176. Which dependency provides Swagger in Spring Boot?
+177. Which server registry is used in Spring Cloud?
+178. Which component routes requests in microservices?
+179. Which library supports declarative REST clients?
+180. Which annotation enables Eureka Server?
+181. Which annotation enables Feign clients?
+182. Which annotation enables discovery client?
+183. Which broker is commonly used with Kafka?
+184. Which broker is commonly used with RabbitMQ?
+185. Which cache database is commonly used with Spring?
+186. Which annotation enables caching?
+187. Which annotation evicts cache values?
+188. Which annotation marks asynchronous methods?
+189. Which annotation enables scheduling?
+190. Which actuator endpoint shows health status?
+191. Which actuator endpoint shows metrics?
+192. Which file stores Spring Boot configuration?
+193. Which profile is commonly used for development?
+
+
+===== PAGE 12 / 24 =====
+
+194. Which profile is commonly used for production?
+195. Which keyword handles inheritance conflicts in interfaces?
+196. Which class serializes Java objects into JSON?
+197. Which library is default for JSON in Spring Boot?
+198. Which annotation ignores unknown JSON properties?
+199. Which annotation binds JSON fields to Java fields?
+200. Which annotation marks request parameters as optional?
+201. Which command initializes a Git repository?
+202. Which command clones a remote repository?
+203. Which command shows repository status?
+204. Which command adds files to staging?
+205. Which command creates a commit?
+206. Which command uploads commits to remote repository?
+207. Which command downloads changes from remote repository?
+208. Which command creates a new branch?
+209. Which command switches branches?
+210. Which command merges branches?
+211. Which command displays commit history?
+212. Which command temporarily saves uncommitted changes?
+213. Which command restores stashed changes?
+214. Which command removes tracked files?
+215. Which command shows differences between files?
+216. Which command rebases branches?
+217. Which command resets commits?
+218. Which command creates tags?
+219. Which command fetches remote changes?
+220. Which command removes untracked files?
+221. Which file ignores files in Git tracking?
+222. Which branch is usually default in GitHub repositories?
+223. Which platform hosts Git repositories online?
+224. Which VCS is distributed?
+225. Which command configures Git username?
+226. Which command configures Git email?
+227. Which command displays configured remotes?
+228. Which command removes a branch?
+229. Which command renames branches?
+230. Which command checks current branch?
+231. Which command creates Docker images?
+232. Which command runs Docker containers?
+233. Which command stops running containers?
+234. Which command starts stopped containers?
+235. Which command restarts containers?
+236. Which command removes containers?
+237. Which command downloads images from Docker Hub?
+238. Which command uploads images to Docker Hub?
+239. Which command lists Docker images?
+240. Which command lists running containers?
+
+
+===== PAGE 13 / 24 =====
+
+241. 242. 243. 244. 245. 246. 247. 248. 249. 250. 251. 252. 253. 254. 255. 256. 257. 258. 259. 260. 261. 262. 263. 264. 265. 266. 267. 268. 269. 270. 271. 272. 273. 274. 275. 276. 277. 278. 279. 280. 281. 282. 283. 284. 285. 286. 287. 288. 289. 290. 291. 292. Which command shows container logs?
+Which command enters a running container terminal?
+Which command removes Docker images?
+Which command displays Docker version?
+Which command shows Docker system information?
+Which command creates Docker volumes?
+Which command creates Docker networks?
+Which file defines Docker image instructions?
+Which file defines Docker Compose services?
+Which command starts Docker Compose services?
+Which command stops Docker Compose services?
+Which command rebuilds Docker Compose containers?
+Which command scales Docker Compose services?
+Which command removes unused Docker resources?
+Which command inspects Docker objects?
+Which mode runs Docker containers in background?
+Which registry stores Docker images publicly?
+Which technology packages applications with dependencies?
+Which tool orchestrates containers at scale?
+Which command displays Docker networks?
+What does JVM stand for?
+What does JDK stand for?
+What does JRE stand for?
+What does OOP stand for?
+What does API stand for?
+What does IDE stand for?
+What does JIT stand for?
+What does JDBC stand for?
+What does DTO stand for?
+What does POJO stand for?
+What does ORM stand for?
+What does SQL stand for?
+What does NoSQL stand for?
+What does REST stand for?
+What does JSON stand for?
+What does XML stand for?
+What does HTTP stand for?
+What does HTTPS stand for?
+What does TCP stand for?
+What does UDP stand for?
+What does JVM bytecode stand for?
+What does CLI stand for?
+What does GUI stand for?
+What does SDK stand for?
+What does FIFO stand for?
+What does LIFO stand for?
+What does CRUD stand for?
+What does ACID stand for?
+What does MVC stand for?
+What does DAO stand for?
+What does IOC stand for in Spring?
+What does DI stand for in Spring?
+
+
+===== PAGE 14 / 24 =====
+
+293. 294. 295. 296. 297. 298. 299. 300. 301. 302. 303. 304. 305. 306. 307. 308. 309. 310. 311. 312. 313. 314. 315. 316. 317. 318. 319. 320. 321. 322. 323. 324. 325. 326. 327. 328. 329. 330. 331. 332. 333. 334. 335. 336. 337. 338. 339. 340. 341.
+342. 343. 344. What does AOP stand for?
+What does JWT stand for?
+What does OAuth stand for?
+What does CORS stand for?
+What does CSRF stand for?
+What does SPA stand for?
+What does CDN stand for?
+What does DNS stand for?
+What does URI stand for?
+What does URL stand for?
+What does UUID stand for?
+What does YAML stand for?
+What does WAR stand for in Java?
+What does JAR stand for?
+What does EAR stand for?
+What does CI stand for?
+What does CD stand for in DevOps?
+What does TDD stand for?
+What does BDD stand for?
+What does SOLID stand for?
+What does SRP stand for?
+What does OCP stand for?
+What does LSP stand for?
+What does ISP stand for?
+What does DIP stand for?
+What does RAM stand for?
+What does CPU stand for?
+What does GPU stand for?
+What does SSH stand for?
+What does FTP stand for?
+What does SMTP stand for?
+What does IMAP stand for?
+What does POP3 stand for?
+What does DNS server stand for?
+What does TCP/IP stand for?
+What does AJAX stand for?
+What does CDN stand for?
+What does SSL stand for?
+What does TLS stand for?
+What does JWT payload stand for?
+What does ORM framework stand for?
+What does JPA stand for?
+What does JPQL stand for?
+What does HQL stand for?
+What does MVC architecture stand for?
+What does CRUD repository stand for?
+What does IOC container stand for?
+What does YAML file stand for?
+What does Spring MVC stand for?
+What does Spring IOC stand for?
+What does Spring DI stand for?
+
+
+===== PAGE 15 / 24 =====
+
+345. 346. 347. 348. 349. 350. 351. 352. 353. 354. 355. 356. 357. 358. 359. 360. 361. 362. 363. 364. 365. 366. 367. 368. 369. 370. 371. 372. 373. 374. 375. 376. 377. 378. 379. 380. 381. 382. 383. 384. 385. 386. 387. 388. 389. 390. 391. 392. 393. 394. 395. 396. What does REST Controller stand for?
+What does HATEOAS stand for?
+What does EJB stand for?
+What does JMS stand for?
+What does JNDI stand for?
+What does RDBMS stand for?
+What does JDBC Template stand for?
+What does JPA Repository stand for?
+What does DTO layer stand for?
+What does DAO layer stand for?
+What does API Gateway stand for?
+What does Eureka stand for in Spring Cloud?
+What does Feign Client stand for?
+What does Hystrix stand for?
+What does Config Server stand for?
+What does OpenAPI stand for?
+What does Swagger stand for?
+What does Docker CLI stand for?
+What does Dockerfile stand for?
+What does OCI stand for?
+What does VM stand for?
+What does CPU limit stand for in Docker?
+What does RAM limit stand for in Docker?
+What does PID stand for?
+What does UID stand for?
+What does GID stand for?
+What does YAML in docker-compose stand for?
+What does DNS in Docker networking stand for?
+What does NAT stand for?
+What does Bridge network stand for?
+What does Overlay network stand for?
+What does Docker Hub stand for?
+What does Image ID stand for?
+What does Container ID stand for?
+What does API version stand for in Docker?
+What does CMD stand for in Dockerfile?
+What does ENTRYPOINT stand for in Dockerfile?
+What does Git SCM stand for?
+What does VCS stand for?
+What does DVCS stand for?
+What does HEAD stand for in Git?
+What does SHA stand for?
+What does SSH key stand for?
+What does HTTPS clone stand for?
+What does PR stand for in GitHub?
+What does MR stand for in GitLab?
+What does CI/CD stand for in GitHub Actions?
+What does README stand for?
+What does MD stand for in README.md?
+What does Git GUI stand for?
+What does Git CLI stand for?
+What does LFS stand for in Git?
+
+
+===== PAGE 16 / 24 =====
+
+What does Rebase stand for?
+What does Fork stand for in GitHub?
+What does Upstream stand for in Git?
+What does Origin stand for in Git?
+What does Commit ID stand for in Git?
+LiveCoding(примеры заданий на лайфкодинг ЕЩЕ буду добавлять):
+397. 398. 399. 400. 401. 402.
+• Write the command to check the installed Docker version.
+• Write the command to display Docker system information.
+• Write the command to pull an image from Docker Hub.
+• Write the command to list all Docker images.
+• Write the command to remove a Docker image.
+• Write the command to run a Docker container.
+• Write the command to run a container in detached mode.
+• Write the command to list running Docker containers.
+• Write the command to list all Docker containers.
+• Write the command to stop a running container.
+• Write the command to start a stopped container.
+• Write the command to restart a container.
+• Write the command to remove a Docker container.
+• Write the command to view container logs.
+• Write the command to enter a running container terminal.
+• Write the command to build a Docker image from a Dockerfile.
+• Write the command to tag a Docker image.
+• Write the command to push an image to Docker Hub.
+• Write the command to remove unused Docker resources.
+• Write the command to inspect a Docker container.
+• Write the command to display Docker networks.
+• Write the command to create a Docker network.
+• Write the command to display Docker volumes.
+• Write the command to create a Docker volume.
+• Write the command to run Docker Compose services.
+• Write the command to stop Docker Compose services.
+• Write the command to rebuild Docker Compose containers.
+• Write the command to view Docker Compose logs.
+• Write the command to scale services in Docker Compose.
+• Write the command to execute a command inside a Docker Compose container.
+• Write the command to initialize a Git repository.
+• Write the command to clone a Git repository.
+• Write the command to check Git status.
+• Write the command to add all files to staging.
+• Write the command to commit changes in Git.
+• Write the command to view commit history.
+• Write the command to create a new Git branch.
+• Write the command to switch to another branch.
+• Write the command to create and switch to a branch in one command.
+• Write the command to merge branches in Git.
+• Write the command to delete a local branch.
+
+
+===== PAGE 17 / 24 =====
+
+• Write the command to delete a remote branch.
+• Write the command to push commits to GitHub.
+• Write the command to pull latest changes from remote repository.
+• Write the command to fetch remote changes without merging.
+• Write the command to view configured remote repositories.
+• Write the command to add a remote repository.
+• Write the command to remove a remote repository.
+• Write the command to stash changes in Git.
+• Write the command to restore stashed changes.
+• Write the command to discard local changes in a file.
+• Write the command to remove a file from Git tracking.
+• Write the command to rename a Git branch.
+• Write the command to show differences between commits.
+• Write the command to view current Git branch.
+• Write the command to configure Git username globally.
+• Write the command to configure Git email globally.
+• Write the command to create a .gitignore file.
+• Write the command to rebase a branch.
+1. • Write the command to undo the last commit while keeping changes.
+• Write the code for a simple Spring Boot application with the main() method.
+• Write the code for a REST controller with one GET endpoint.
+• Write the code for a POST endpoint that accepts JSON data.
+• Write the code for a PUT endpoint to update a user.
+• Write the code for a DELETE endpoint to remove a record by ID.
+• Write the code for a controller that returns a list of objects.
+• Write the code using @PathVariable in Spring Boot.
+• Write the code using @RequestParam in Spring Boot.
+• Write the code for a DTO class in Spring Boot.
+• Write the code for an Entity class named Student.
+• Write the code for a JPA Repository interface.
+• Write the code for a Service class with @Service annotation.
+• Write the code for constructor-based dependency injection.
+• Write the code using @Autowired.
+• Write the code for a One-to-Many relationship between Department and Employee.
+• Write the code for a Many-to-One relationship in JPA.
+• Write the code for a Many-to-Many relationship between Student and Course.
+• Write the code for pagination using Spring Data JPA.
+• Write the code for sorting data using Spring Data JPA.
+• Write the code for a custom query using @Query.
+• Write the code for validation using @Valid.
+• Write the code using validation annotations such as @NotNull and @Size.
+• Write the code for global exception handling using @ControllerAdvice.
+• Write the code for a custom exception class.
+• Write the code for handling exceptions with @ExceptionHandler.
+• Write the code for configuring MySQL database connection in application.properties.
+• Write the code for configuring PostgreSQL database connection in Spring Boot.
+
+
+===== PAGE 18 / 24 =====
+
+• Write the code for a Spring Boot application using Lombok annotations.
+• Write the code using @Builder annotation in Lombok.
+• Write the code for enabling Swagger/OpenAPI documentation.
+• Write the code for a basic Spring Security configuration.
+• Write the code for password encoding using BCryptPasswordEncoder.
+• Write the code for JWT token generation in Spring Boot.
+• Write the code for JWT token validation.
+• Write the code for a login endpoint using Spring Security.
+• Write the code for enabling CORS in Spring Boot.
+• Write the code for a Dockerfile for a Spring Boot application.
+• Write the code for a Docker Compose file with Spring Boot and PostgreSQL.
+• Write the code for a unit test using JUnit.
+• Write the code for mocking a service using Mockito.
+• Write the code using @SpringBootTest.
+• Write the code for asynchronous processing using @Async.
+• Write the code for caching using @Cacheable.
+• Write the code for reading values from application.properties using @Value.
+1. • Write the code for profile-based configuration using @Profile.
+1. Write an endpoint that accepts a number and returns its factorial.
+2. Write an endpoint that checks whether a number is prime.
+3. Write an endpoint that returns Fibonacci sequence up to N numbers.
+4. Write an endpoint that reverses a given string.
+5. Write an endpoint that counts vowels in a string.
+6. Write an endpoint that checks whether a string is palindrome.
+7. Write an endpoint that sorts a list of integers in ascending order.
+8. Write an endpoint that returns the maximum number from a list.
+9. Write an endpoint that returns the minimum number from a list.
+10. Write an endpoint that calculates the sum of all numbers in a list.
+11. Write an endpoint that calculates the average value of numbers.
+12. Write an endpoint that removes duplicate values from a list.
+13. Write an endpoint that counts words in a sentence.
+14. Write an endpoint that converts Celsius to Fahrenheit.
+15. Write an endpoint that converts Fahrenheit to Celsius.
+16. Write an endpoint that generates a random password.
+17. Write an endpoint that returns current server date and time.
+
+
+===== PAGE 19 / 24 =====
+
+18. Write an endpoint that calculates power of a number.
+19. Write an endpoint that finds GCD of two numbers.
+20. Write an endpoint that finds LCM of two numbers.
+21. Write an endpoint that checks whether a year is leap year.
+22. Write an endpoint that calculates BMI.
+23. Write an endpoint that counts character frequency in a string.
+24. Write an endpoint that returns all even numbers from a list.
+25. Write an endpoint that returns all odd numbers from a list.
+26. Write an endpoint that capitalizes the first letter of every word.
+27. Write an endpoint that validates email format.
+28. Write an endpoint that validates password strength.
+29. Write an endpoint that returns multiplication table for a given number.
+30. Write an endpoint that calculates area of a circle.
+31. Write an endpoint that calculates perimeter of a rectangle.
+32. Write an endpoint that converts string to uppercase.
+33. Write an endpoint that converts string to lowercase.
+34. Write an endpoint that removes spaces from a string.
+35. Write an endpoint that counts number of digits in an integer.
+36. Write an endpoint that returns square root of a number.
+37. Write an endpoint that checks whether two strings are anagrams.
+38. Write an endpoint that merges two lists.
+39. Write an endpoint that returns unique characters from a string.
+40. Write an endpoint that calculates percentage from two numbers.
+41. Write an endpoint that returns days between two dates.
+42. Write an endpoint that formats phone number.
+43. Write an endpoint that validates URL format.
+44. Write an endpoint that calculates simple interest.
+45. Write an endpoint that calculates compound interest.
+46. Write an endpoint that returns the largest word in a sentence.
+
+
+===== PAGE 20 / 24 =====
+
+47. Write an endpoint that counts occurrence of a specific character.
+48. Write an endpoint that returns JSON with student information.
+49. Write an endpoint that filters numbers greater than a given value.
+50. Write an endpoint that returns whether a number is positive, negative, or zero.
+ Write the code to find the factorial of a number.
+ Write the code to check whether a number is prime.
+ Write the code to reverse a string.
+ Write the code to check whether a string is a palindrome.
+ Write the code to find the largest element in an array.
+ Write the code to sort an array in ascending order.
+ Write the code to calculate the sum of all elements in an array.
+ Write the code to find the average value of elements in a list.
+ Write the code to count vowels in a string.
+ Write the code to count the frequency of characters in a string.
+ Write the code to swap two numbers without using a third variable.
+ Write the code to generate the Fibonacci sequence.
+ Write the code to remove duplicate elements from an array.
+ Write the code to find the second largest number in an array.
+ Write the code to merge two arrays.
+ Write the code to find common elements between two arrays.
+ Write the code to check whether two strings are anagrams.
+ Write the code to convert a string to uppercase without using built-in methods.
+ Write the code to count words in a sentence.
+ Write the code to replace spaces with underscores in a string.
+ Write the code to create a class named Student with fields and methods.
+ Write the code demonstrating constructor overloading in Java.
+ Write the code demonstrating method overloading.
+ Write the code demonstrating method overriding.
+ Write the code demonstrating inheritance in Java.
+
+
+===== PAGE 21 / 24 =====
+
+ Write the code demonstrating encapsulation.
+ Write the code demonstrating abstraction using abstract classes.
+ Write the code demonstrating abstraction using interfaces.
+ Write the code demonstrating polymorphism in Java.
+ Write the code for implementing a singleton class.
+ Write the code to read data from a text file.
+ Write the code to write data into a text file.
+ Write the code to handle exceptions using try-catch.
+ Write the code demonstrating custom exceptions.
+ Write the code using ArrayList in Java.
+ Write the code using HashMap in Java.
+ Write the code to iterate through a list using a for-each loop.
+ Write the code to sort a list of strings alphabetically.
+ Write the code using Java Streams to filter even numbers.
+ Write the code using Java Streams to sort objects.
+ Write the code to create and start a thread in Java.
+ Write the code using Runnable interface.
+ Write the code demonstrating synchronization in multithreading.
+ Write the code to calculate the sum of numbers using recursion.
+ Write the code to implement binary search.
+ Write the code to implement linear search.
+ Write the code to convert a decimal number to binary.
+ Write the code to count even and odd numbers in an array.
+1.  Write the code to find the minimum element in a list.
+Write the code for CRUD operations for a Product entity using Spring Boot.
+2. Write the code for a REST API that returns all students from the database.
+3. Write the code for an endpoint that searches users by username.
+4. Write the code for saving data into a database using Spring Data JPA.
+5. Write the code for updating a record using JpaRepository.
+
+
+===== PAGE 22 / 24 =====
+
+6. Write the code for deleting a record by ID using Spring Data JPA.
+7. Write the code for a custom finder method in a repository interface.
+8. Write the code for connecting a Spring Boot application to MySQL.
+9. Write the code for connecting a Spring Boot application to PostgreSQL.
+10. Write the code for a REST endpoint that returns HTTP status codes correctly.
+11. Write the code for returning ResponseEntity in Spring Boot.
+12. Write the code for uploading a file in Spring Boot.
+13. Write the code for downloading a file in Spring Boot.
+14. Write the code for configuring CORS globally.
+15. Write the code for enabling Swagger UI in Spring Boot.
+16. Write the code for creating a custom query with JPQL.
+17. Write the code for creating a native SQL query in Spring Data JPA.
+18. Write the code for implementing pagination in a REST API.
+19. Write the code for implementing sorting in a REST API.
+20. Write the code for filtering data using request parameters.
+21. Write the code for validating request data using Bean Validation.
+22. Write the code for handling validation errors globally.
+23. Write the code for creating a login API with Spring Security.
+24. Write the code for configuring role-based authorization in Spring Security.
+25. Write the code for restricting endpoints based on user roles.
+26. Write the code for generating JWT access tokens.
+27. Write the code for validating JWT tokens in requests.
+28. Write the code for implementing refresh tokens in Spring Security.
+29. Write the code for encrypting passwords before saving them to the database.
+30. Write the code for configuring stateless authentication in Spring Security.
+31. Write the code for creating a microservice registered in Eureka Server.
+32. Write the code for configuring Eureka Server in Spring Cloud.
+33. Write the code for creating an API Gateway route.
+34. Write the code for inter-service communication using OpenFeign.
+
+
+===== PAGE 23 / 24 =====
+
+35. Write the code for centralized configuration using Spring Cloud Config.
+36. Write the code for creating a fallback method with Resilience4j.
+37. Write the code for implementing circuit breaker in Spring Boot.
+38. Write the code for logging requests and responses in Spring Boot.
+39. Write the code for custom logging configuration using Logback.
+40. Write the code for adding Actuator endpoints in Spring Boot.
+41. Write the code for monitoring health status using Spring Boot Actuator.
+42. Write the code for creating scheduled tasks using @Scheduled.
+43. Write the code for asynchronous methods using @Async.
+44. Write the code for sending emails in Spring Boot.
+45. Write the code for consuming a third-party REST API using RestTemplate.
+46. Write the code for consuming a third-party REST API using WebClient.
+47. Write the code for implementing caching using @Cacheable.
+48. Write the code for reading configuration values using @ConfigurationProperties.
+49. Write the code for creating Dockerfile for a Spring Boot microservice.
+50. Write the code for Docker Compose configuration with Spring Boot and PostgreSQL.
+51. Write the code for unit testing a service layer using Mockito.
+52. Write the code for integration testing a REST controller.
+53. Write the code for testing repository layer using H2 database.
+54. Write the code for creating a custom annotation in Spring Boot.
+55. Write the code for implementing exception handling with custom error responses.
+56. Write the code for mapping Entity to DTO manually.
+57. Write the code for mapping Entity to DTO using MapStruct.
+58. Write the code for implementing soft delete functionality.
+59. Write the code for auditing entities using Spring Data JPA.
+60. Write the code for implementing optimistic locking using JPA.
+61. Write the code for creating a REST API for employee management.
+62. Write the code for implementing search functionality with multiple parameters.
+63. Write the code for creating a custom response wrapper class.
+64. Write the code for handling 404 Not Found exceptions globally.
+65. Write the code for creating a PATCH endpoint in Spring Boot.
+
+
+===== PAGE 24 / 24 =====
+
+66. Write the code for validating email uniqueness before saving a user.
+67. Write the code for implementing pagination and filtering together.
+68. Write the code for creating bidirectional One-to-Many relationship.
+69. Write the code for implementing lazy loading in JPA entities.
+70. Write the code for implementing eager loading in JPA entities.
+71. Write the code for configuring multiple databases in Spring Boot.
+72. Write the code for implementing custom authentication provider.
+73. Write the code for creating a logout endpoint with Spring Security.
+74. Write the code for implementing method-level security using @PreAuthorize.
+75. Write the code for creating admin-only endpoints.
+76. Write the code for implementing rate limiting in Spring Boot.
+77. Write the code for adding API versioning in REST endpoints.
+78. Write the code for creating a REST API documentation with OpenAPI annotations.
+79. Write the code for implementing global request logging filter.
+80. Write the code for creating a custom interceptor in Spring Boot.
+81. Write the code for implementing file storage service in Spring Boot.
+82. Write the code for uploading multiple files in Spring Boot.
+83. Write the code for downloading images from the server.
+84. Write the code for sending HTML emails using Spring Boot.
+85. Write the code for scheduling a task to run every 5 minutes.
